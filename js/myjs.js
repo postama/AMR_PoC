@@ -27,7 +27,7 @@
 			}
 			
 			function setActive(activeEle){
-				$(".active").removeClass("active");
+				$(".infoContainer .active").removeClass("active");
 				$(activeEle).addClass("active");
 				var index = $(activeEle).index() + 1;
 				$("#text li:nth-child( " + index + ")").addClass("active");
