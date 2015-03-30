@@ -1,0 +1,158 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 350px;
+  height: auto;
+}
+
+.parallax img{
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+/*Page Transistions*/
+.page{width:0; height:0; overflow-x:hidden; transisition:height 2s, width 2s;}
+.active-page{width:100%; height:100%;}
+
+
+/* Infographic */
+
+.IE8 .infoContainer{display:none !important;}
+
+@media screen and (max-width: 700px){
+   .infoContainer{display:none !important}
+}
+
+.infoContainer{
+padding-top:30px;
+margin:0 auto;
+max-width:650px; 
+height:400px;
+font-size:0;
+}
+
+.infoContainer > div{height:100%; display:inline-block;font-size:12px;}
+#graphic{
+    background-image: url("../img/info/eh_bg_circle_line.png");
+    background-repeat:no-repeat;
+    position:relative;
+    background-position:center;
+    margin:0;
+    margin-right:15px;
+    padding:0;
+}
+
+.infoContainer ul{
+    list-style-type:none;
+    display:block;
+    height:100%;
+    margin: 0 auto;
+    padding:0;
+}
+
+#graphic li{
+    position:absolute;
+    border-radius:100%;
+    transition-duration:.2s;
+    transition-property:all;  
+    background-color:#acacac;
+    cursor:pointer;
+    list-style-type:none !important;
+}
+
+#graphic img{
+    width:90%;
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    image-rendering: crisp-edges;
+}
+
+#graphic .AMR{left:5px;}
+#graphic .AMR.active{left:0px; background-color:#cd1041;}
+#graphic .AMR:hover{background-color:#cd1041;}
+#text .AMR .title{color:#cd1041;}
+
+#graphic .EmCare{left:0;right:0;}
+#graphic .EmCare.active{background-color:#008265;}
+#graphic .EmCare:hover{background-color:#008265;}
+#text .EmCare .title{color:#008265;}
+
+#graphic .Evolution{right:5px;}
+#graphic .Evolution.active{right:0px; background-color:#1060a8;}
+#graphic .Evolution:hover{background-color:#1060a8;}
+#text .Evolution .title{color:#1060a8;}
+
+#graphic .EVHC{top:9px;}
+#graphic .EVHC.active{top:4px; background-color:#4d738a;}
+#graphic .EVHC:hover{background-color:#4d738a;}
+#text .EVHC .title{color:#4d738a;}
+
+.smallIcon{
+    width:80px;
+    height:80px;
+    margin:auto !important;
+    top:0;
+    bottom:0;
+}
+
+.smallIcon.active{
+    width:90px;
+    height:90px;
+}
+
+.largeIcon{
+    width:100px;
+    height:100px;
+    margin:auto;
+    left:0;
+    right:0;
+}
+
+.largeIcon.active{
+    width:110px;
+    height:110px;
+}
+
+#text{position:relative; margin:0; padding:0;}
+#text ul{margin:0; padding:0;}
+#text > li{
+    position:absolute;
+    transition-duration:.2s;
+    transition-property:opacity; 
+    opacity:0;
+    border-left:2px solid #AAA;
+    padding:7px 0 7px 15px;
+    list-style-type:none;
+    width:100%;
+    box-sizing:border-box;
+}
+#text li.active{opacity:1;}
+#text .title{display:block; font-size:14px; font-weight:500;}
+#text ul li{
+    list-style-type:disc;
+    margin-left:15px;
+}
