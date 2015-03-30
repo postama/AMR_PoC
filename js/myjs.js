@@ -66,7 +66,3 @@
 			});
 		}(jQuery, window, document));
 		
-$('a').on('click', function(evt){
-	$('.active-page').removeClass('active-page');
-	$(evt.target.hash).addClass('active-page');
-});
